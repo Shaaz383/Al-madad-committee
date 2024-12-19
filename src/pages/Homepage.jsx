@@ -25,16 +25,15 @@ const Homepage = () => {
   };
 
   return (
-    <div
-      className="min-h-screen bg-white
-    "
-    >
+    <div className="min-h-screen bg-bgGreenGradient">
       <Navbar handleProfileClick={handleProfileClick} />
-      <div className="mt-24 mb-12 pt-12">
-        <h1 className="text-center text-2xl text-primary font-semibold">
-          Welcome to our community
+
+      <div className="mt-20 py-8">
+        <h1 className="text-center text-3xl text-whiteColor font-bold drop-shadow-lg">
+          Welcome to Al-Madad Committee
         </h1>
       </div>
+
       <BoxesContainer activeBox={activeBox} handleBoxClick={handleBoxClick} />
 
       <ProfileDialog

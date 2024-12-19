@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ handleProfileClick }) => {
   return (
-    <div className="fixed top-0 left-0 w-full bg-white">
-      <div className="w-full flex items-center justify-between p-4 ">
+    <div className="fixed top-0 left-0  w-full shadow-lg rounded z-10">
+      <div className="w-full flex items-center justify-between  pt-4 pb-2 px-2 bg-whiteColor">
         <div className="w-1/4 h-1/4">
           <Link to="/">
             <img
@@ -16,17 +16,17 @@ const Navbar = ({ handleProfileClick }) => {
         </div>
 
         <div>
-          <h1 className="text-center text-lg text-primary">
-            Hello,{" "}
-            <span className="font-semibold text-secondary">Username</span> 🖐️
+          <h1 className="text-center text-[21px] text-primaryGreen">
+            Hello, <span className="font-bold text-lightGreen">Username</span>{" "}
+            🖐️
           </h1>
         </div>
         <div
-          className="h-8 w-8 bg-black rounded-full overflow-hidden flex items-center justify-center mr-4 cursor-pointer"
+          className="h-10 w-10 bg-black rounded-full overflow-hidden flex items-center justify-center mr-4 cursor-pointer"
           onClick={handleProfileClick}
         >
           <img
-            src="https://via.placeholder.com/150"
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
             alt="Profile"
             className="w-full h-full object-cover"
           />

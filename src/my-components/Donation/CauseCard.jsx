@@ -11,33 +11,35 @@ const CauseCard = ({ cause }) => {
   );
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+    <div className="bg-whiteColor rounded-lg shadow-md p-4 mb-6">
       <img
         src={cause.image}
         alt={cause.name}
         className="w-full h-48 object-cover rounded-lg mb-4"
       />
-      <h2 className="text-lg font-semibold  mb-3">
+      <h2 className="text-lg font-semibold  mb-3 text-primaryGreen">
         {cause.name}
       </h2>
-      <p className="text-sm  mb-4">{cause.description}</p>
+      <p className="text-sm  mb-4 text-gray-600">{cause.description}</p>
 
       <div className="mb-4">
         <Progress
           value={progressPercentage}
           max={100}
-          className="rounded-full h-4 bg-gray-200"
+          className="rounded-full h-4 bg-gray-300"
           color="green"
         />
         <div className="text-center mt-2">
-          <p className="text-sm font-semibold text-gray-700">
+          <p className="text-sm font-semibold text-lightGreen">
             {`₹${cause.raisedAmount.toLocaleString()} raised of ₹${cause.targetAmount.toLocaleString()} goal`}
           </p>
         </div>
-        <Button className="mt-4">Donate now</Button>
+        <Button className="mt-4 bg-primaryGreen text-whiteColor">
+          Donate now
+        </Button>
       </div>
 
-      <h3 className="text-md font-semibold mb-3">
+      <h3 className="text-md font-semibold mb-3 text-primaryGreen">
         Recent Donations
       </h3>
       <div className="bg-gray-50 rounded-lg p-3">
@@ -50,12 +52,12 @@ const CauseCard = ({ cause }) => {
               className="flex justify-between items-center border-b last:border-none py-2"
             >
               <div>
-                <p className="text-sm font-medium">
+                <p className="text-sm font-medium text-secondary">
                   {donation.name}
                 </p>
-                <p className="text-xs text-gray-500">{donation.date}</p>
+                <p className="text-xs text-primaryGreen">{donation.date}</p>
               </div>
-              <p className="text-green-600 font-semibold">{donation.amount}</p>
+              <p className="text-lightGreen font-semibold">{donation.amount}</p>
             </div>
           ))
         )}

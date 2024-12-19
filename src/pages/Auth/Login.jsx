@@ -19,16 +19,16 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-center items-center p-4">
-      <img src="../../../logo 2.png" alt="Logo" className="w-2/4 h-2/4" />
+    <div className="min-h-screen bg-bgGreenGradient flex flex-col justify-center items-center p-4">
+      {/* <img src="../../../logo 2.png" alt="Logo" className="w-2/4 h-2/4 filter grayscale" /> */}
 
-      <div className="w-full max-w-sm bg-white p-6 rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold text-center mb-4 text-primary">
+      <div className="w-full max-w-sm bg-whiteColor p-6 rounded-lg shadow-md">
+        <h1 className="text-2xl font-bold text-center mb-4 text-primaryGreen">
           Login
         </h1>
         <form onSubmit={handleLogin}>
           <div className="mb-4">
-            <Label htmlFor="email" className="block mb-2 text-sm font-medium">
+            <Label htmlFor="email" className="block mb-2 text-sm font-medium text-primaryGreen">
               Email Address
             </Label>
             <Input
@@ -42,7 +42,7 @@ const Login = () => {
           <div className="mb-4">
             <Label
               htmlFor="password"
-              className="block mb-2 text-sm font-medium"
+              className="block mb-2 text-sm font-medium text-primaryGreen"
             >
               Password
             </Label>
@@ -54,7 +54,7 @@ const Login = () => {
               required
             />
           </div>
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full bg-primaryGreen text-whiteColor">
             Login
           </Button>
         </form>
@@ -93,7 +93,7 @@ const Login = () => {
         <div className="mt-4 text-center">
           <Button
             type="button"
-            className="w-full bg-gray-800 text-white"
+            className="w-full bg-lightGreen text-white"
             onClick={handleAdminLogin}
           >
             Admin Login

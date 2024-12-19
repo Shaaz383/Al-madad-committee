@@ -13,14 +13,14 @@ const ProfileDialog = ({ isOpen, setIsOpen, handleLogout, handleGoToProfile }) =
         <DialogFooter>
           <button
             onClick={handleLogout}
-            className="w-full bg-red-500 text-white p-2 rounded"
+            className="w-full bg-tomato text-whiteColor p-2 rounded"
           >
             <FiLogOut className="inline-block mr-2" />
             Logout
           </button>
           <button
             onClick={handleGoToProfile}
-            className="w-full bg-primary text-white p-2 rounded mb-4"
+            className="w-full bg-primaryGreen text-whiteColor p-2 rounded mb-4"
           >
             Go to Profile
           </button>

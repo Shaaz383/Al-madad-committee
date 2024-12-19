@@ -18,19 +18,19 @@ const PaymentPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center pt-4">
+    <div className="min-h-screen bg-bgGreenGradient flex flex-col items-center pt-4">
       {/* Logo Section */}
       <div className="mb-6">
-        <img
+        {/* <img
           src="../../../logo 2.png"
           alt="Joda Masjid Logo"
           className="w-32 h-32"
-        />
+        /> */}
       </div>
 
       {/* Set Payment Amount */}
-      <div className="w-full max-w-md bg-white shadow-md p-4 mt-4">
-        <h3 className="text-lg font-medium mb-4">Enter Amount</h3>
+      <div className="w-full max-w-md bg-whiteColor shadow-md p-4 mt-4">
+        <h3 className="text-lg font-medium mb-4 text-primaryGreen">Enter Amount</h3>
         <input
           type="number"
           value={amount}
@@ -41,18 +41,18 @@ const PaymentPage = () => {
       </div>
 
       {/* Payment Options */}
-      <div className="w-full max-w-md bg-white shadow-md p-4 mt-4">
-        <h3 className="text-lg font-medium mb-4">Payment Method</h3>
+      <div className="w-full max-w-md bg-whiteColor shadow-md p-4 mt-4">
+        <h3 className="text-lg font-medium mb-4 text-primaryGreen">Payment Method</h3>
         <div className="flex border-b-2">
           <button
             className={`flex-1 py-2 ${
-              selectedMethod === "UPI" ? "border-b-4 border-secondary" : ""
+              selectedMethod === "UPI" ? "border-b-4 border-primaryGreen text-primaryGreen" : ""
             }`}
             onClick={() => setSelectedMethod("UPI")}
           >
             BHIM UPI
           </button>
-          <button
+          {/* <button
             className={`flex-1 py-2 ${
               selectedMethod === "Debit Card"
                 ? "border-b-4 border-secondary"
@@ -61,8 +61,8 @@ const PaymentPage = () => {
             onClick={() => setSelectedMethod("Debit Card")}
           >
             DEBIT CARD
-          </button>
-          <button
+          </button> */}
+          {/* <button
             className={`flex-1 py-2 ${
               selectedMethod === "Credit Card"
                 ? "border-b-4 border-secondary"
@@ -71,13 +71,13 @@ const PaymentPage = () => {
             onClick={() => setSelectedMethod("Credit Card")}
           >
             CREDIT CARD
-          </button>
+          </button> */}
         </div>
 
         {/* UPI Payment */}
         {selectedMethod === "UPI" && (
           <div className="mt-4">
-            <label htmlFor="upiId" className="block text-sm font-medium">
+            <label htmlFor="upiId" className="block text-sm font-medium text-primaryGreen">
               UPI ID
             </label>
             <input
@@ -96,7 +96,7 @@ const PaymentPage = () => {
       <div className="w-full max-w-md p-4 mt-4">
         <button
           onClick={handlePaymentSubmit}
-          className="w-full bg-primary text-white py-3 rounded-md font-medium"
+          className="w-full bg-primaryGreen text-white py-3 rounded-md font-medium"
         >
           PAY ₹{amount || "0"}
         </button>

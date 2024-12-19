@@ -12,17 +12,17 @@ const Signup = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col justify-center items-center p-4">
-      <img src="../../../logo 2.png" alt="Logo" className="w-2/4 h-2/4" />
+    <div className="min-h-screen bg-bgGreenGradient flex flex-col justify-center items-center p-4">
+      {/* <img src="../../../logo 2.png" alt="Logo" className="w-2/4 h-2/4" /> */}
 
-      <div className="w-full max-w-sm bg-white p-6 rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold text-center mb-4 text-primary">
+      <div className="w-full max-w-sm bg-whiteColor p-6 rounded-lg shadow-md">
+        <h1 className="text-2xl font-bold text-center mb-4 text-primaryGreen">
           Sign Up
         </h1>
 
         <form onSubmit={handleSignup}>
           <div className="mb-4">
-            <Label htmlFor="name" className="block mb-2 text-sm font-medium">
+            <Label htmlFor="name" className="block mb-2 text-sm font-medium text-primaryGreen">
               Name
             </Label>
             <Input
@@ -35,7 +35,7 @@ const Signup = () => {
           </div>
 
           <div className="mb-4">
-            <Label htmlFor="email" className="block mb-2 text-sm font-medium">
+            <Label htmlFor="email" className="block mb-2 text-sm font-medium text-primaryGreen">
               Email Address
             </Label>
             <Input
@@ -48,7 +48,7 @@ const Signup = () => {
           </div>
 
           <div className="mb-4">
-            <Label htmlFor="mobile" className="block mb-2 text-sm font-medium">
+            <Label htmlFor="mobile" className="block mb-2 text-sm font-medium text-primaryGreen">
               Mobile Number
             </Label>
             <Input
@@ -63,7 +63,7 @@ const Signup = () => {
           <div className="mb-4">
             <Label
               htmlFor="password"
-              className="block mb-2 text-sm font-medium"
+              className="block mb-2 text-sm font-medium text-primaryGreen"
             >
               Password
             </Label>
@@ -76,16 +76,16 @@ const Signup = () => {
             />
           </div>
 
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full bg-primaryGreen text-whiteColor">
             Sign Up
           </Button>
         </form>
 
-        <p className="text-sm text-center text-gray-600 mt-4">
+        <p className="text-sm text-center text-secondary mt-4">
           Already have an account?{" "}
           <Link
             to="/login"
-            className="text-blue-500 font-semibold hover:underline"
+            className="text-secondary font-semibold hover:underline"
           >
             Log in
           </Link>

@@ -74,10 +74,10 @@ const AllUsers = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white text-primary">
+    <div className="min-h-screen bg-bgGreenGradient">
       <Navbar handleProfileClick={handleProfileClick} />
-      <div className="pt-28 px-4">
-        <h1 className="text-2xl font-semibold text-center text-gray-800 mb-6">
+      <div className="mt-20 py-8 px-4">
+        <h1 className="text-3xl font-semibold text-center  mb-6 text-whiteColor">
           Our Heroes
         </h1>
         <TopDonors donors={topDonors} image={img} />

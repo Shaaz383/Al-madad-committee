@@ -61,10 +61,10 @@ const Profile = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white p-4">
+    <div className="min-h-screen bg-bgGreenGradient p-4">
       <Navbar handleProfileClick={handleProfileClick} />
 
-      <h1 className="text-xl font-bold text-center mb-6 mt-24">Profile</h1>
+      <h1 className="text-3xl font-bold text-center mt-20 py-8 text-whiteColor">Profile</h1>
 
       {/* Profile Section */}
       <ProfileSection

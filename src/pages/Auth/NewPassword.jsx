@@ -15,19 +15,19 @@ const NewPassword = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100 px-4">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-bgGreenGradient px-4">
       {/* Logo Section */}
       <div className="mb-6">
-        <img
+        {/* <img
           src="../../../logo 2.png"
           alt="Joda Masjid Logo"
           className="w-32 h-32"
-        />
+        /> */}
       </div>
 
       {/* Form Section */}
-      <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold text-center text-primary mb-4">
+      <div className="w-full max-w-md bg-whiteColor p-6 rounded-lg shadow-lg">
+        <h1 className="text-2xl font-bold text-center text-primaryGreen mb-4">
           Set New Password
         </h1>
         <form onSubmit={handleNewPasswordSubmit}>
@@ -35,7 +35,7 @@ const NewPassword = () => {
           <div className="mb-4">
             <Label
               htmlFor="new-password"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-primaryGreen mb-1"
             >
               New Password
             </Label>
@@ -52,7 +52,7 @@ const NewPassword = () => {
           <div className="mb-6">
             <Label
               htmlFor="confirm-password"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-primaryGreen mb-1"
             >
               Confirm Password
             </Label>
@@ -68,7 +68,7 @@ const NewPassword = () => {
           {/* Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark"
+            className="w-full bg-primaryGreen text-white py-2 rounded-md hover:bg-green-700"
           >
             Confirm Password
           </Button>

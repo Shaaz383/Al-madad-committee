@@ -15,22 +15,22 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100 px-4">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-bgGreenGradient px-4">
       {/* Logo Section */}
       <div className="mb-6">
-        <img
+        {/* <img
           src="../../../logo 2.png"
           alt="Joda Masjid Logo"
           className="w-32 h-32"
-        />
+        /> */}
       </div>
 
       {/* Form Section */}
-      <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-bold text-center text-primary mb-4">
+      <div className="w-full max-w-md bg-whiteColor p-6 rounded-lg shadow-lg">
+        <h1 className="text-2xl font-bold text-center text-primaryGreen mb-4">
           Forgot Password
         </h1>
-        <p className="text-sm text-gray-600 text-center mb-6">
+        <p className="text-sm text-gray-500 text-center mb-6">
           Enter your registered email address, and we'll send you instructions
           to reset your password.
         </p>
@@ -39,7 +39,7 @@ const ForgotPassword = () => {
           <div className="mb-6">
             <Label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-primaryGreen mb-1"
             >
               Email Address
             </Label>
@@ -63,7 +63,7 @@ const ForgotPassword = () => {
 
         {/* Back to Login */}
         <div className="mt-4 text-center">
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-secondary">
             Remember your password?{" "}
             <button
               onClick={() => navigate("/login")}

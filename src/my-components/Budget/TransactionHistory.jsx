@@ -9,18 +9,18 @@ const TransactionHistory = ({ transactions }) => {
   );
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md">
+    <div className="bg-whiteColor p-4 rounded-lg shadow-md">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold  mb-3">
+        <h2 className="text-lg font-bold  mb-3 text-primaryGreen">
           Transaction History
         </h2>
-        <h2 className="text-green-500 font-semibold">
+        <h2 className="text-lightGreen font-semibold">
           Total = ₹{totalAmount.toLocaleString()}
         </h2>
       </div>
       <table className="w-full text-left border-collapse text-sm">
         <thead>
-          <tr className="border-b text-gray-600">
+          <tr className="border-b text-primaryGreen">
             <th className="py-2">Category</th>
             <th className="py-2">Amount</th>
             <th className="py-2">Date</th>
@@ -30,7 +30,7 @@ const TransactionHistory = ({ transactions }) => {
           {transactions.map((transaction, index) => (
             <tr key={index} className="border-b">
               <td className="py-2">{transaction.category}</td>
-              <td className="py-2 text-green-500 font-semibold">
+              <td className="py-2 text-lightGreen font-semibold">
                 ₹{transaction.amount.toLocaleString()}
               </td>
               <td className="py-2">{transaction.date}</td>
