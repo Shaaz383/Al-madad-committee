@@ -19,15 +19,14 @@ const PaymentPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center pt-4">
-       {/* Logo Section */}
-       <div className="mb-6">
+      {/* Logo Section */}
+      <div className="mb-6">
         <img
-          src="../../../joda masjid logo.png"
+          src="../../../logo 2.png"
           alt="Joda Masjid Logo"
           className="w-32 h-32"
         />
       </div>
-   
 
       {/* Set Payment Amount */}
       <div className="w-full max-w-md bg-white shadow-md p-4 mt-4">
@@ -55,7 +54,9 @@ const PaymentPage = () => {
           </button>
           <button
             className={`flex-1 py-2 ${
-              selectedMethod === "Debit Card" ? "border-b-4 border-secondary" : ""
+              selectedMethod === "Debit Card"
+                ? "border-b-4 border-secondary"
+                : ""
             }`}
             onClick={() => setSelectedMethod("Debit Card")}
           >
@@ -63,7 +64,9 @@ const PaymentPage = () => {
           </button>
           <button
             className={`flex-1 py-2 ${
-              selectedMethod === "Credit Card" ? "border-b-4 border-secondary" : ""
+              selectedMethod === "Credit Card"
+                ? "border-b-4 border-secondary"
+                : ""
             }`}
             onClick={() => setSelectedMethod("Credit Card")}
           >

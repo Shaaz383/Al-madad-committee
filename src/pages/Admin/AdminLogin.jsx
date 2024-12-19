@@ -20,11 +20,7 @@ const AdminLogin = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center p-4">
-      <img
-        src="../../../joda masjid logo.png"
-        alt="Logo"
-        className="w-2/4 h-2/4 mb-6"
-      />
+      <img src="../../../logo 2.png" alt="Logo" className="w-2/4 h-2/4 mb-6" />
 
       <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold text-center mb-6 text-red-600">
@@ -32,7 +28,10 @@ const AdminLogin = () => {
         </h1>
         <form onSubmit={handleAdminLogin}>
           <div className="mb-4">
-            <Label htmlFor="admin-email" className="block mb-2 text-sm font-medium">
+            <Label
+              htmlFor="admin-email"
+              className="block mb-2 text-sm font-medium"
+            >
               Admin Email
             </Label>
             <Input

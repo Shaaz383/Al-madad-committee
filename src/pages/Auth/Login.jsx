@@ -20,11 +20,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-white flex flex-col justify-center items-center p-4">
-      <img
-        src="../../../joda masjid logo.png"
-        alt="Logo"
-        className="w-2/4 h-2/4"
-      />
+      <img src="../../../logo 2.png" alt="Logo" className="w-2/4 h-2/4" />
 
       <div className="w-full max-w-sm bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold text-center mb-4 text-primary">

@@ -19,7 +19,7 @@ const ForgotPassword = () => {
       {/* Logo Section */}
       <div className="mb-6">
         <img
-          src="../../../joda masjid logo.png"
+          src="../../../logo 2.png"
           alt="Joda Masjid Logo"
           className="w-32 h-32"
         />
@@ -31,12 +31,16 @@ const ForgotPassword = () => {
           Forgot Password
         </h1>
         <p className="text-sm text-gray-600 text-center mb-6">
-          Enter your registered email address, and we'll send you instructions to reset your password.
+          Enter your registered email address, and we'll send you instructions
+          to reset your password.
         </p>
         <form onSubmit={handleForgotPasswordSubmit}>
           {/* Email Input */}
           <div className="mb-6">
-            <Label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Email Address
             </Label>
             <Input
@@ -49,7 +53,10 @@ const ForgotPassword = () => {
           </div>
 
           {/* Submit Button */}
-          <Button type="submit" className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark">
+          <Button
+            type="submit"
+            className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark"
+          >
             Send Reset Instructions
           </Button>
         </form>

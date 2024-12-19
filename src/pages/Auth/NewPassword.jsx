@@ -19,7 +19,7 @@ const NewPassword = () => {
       {/* Logo Section */}
       <div className="mb-6">
         <img
-          src="../../../joda masjid logo.png"
+          src="../../../logo 2.png"
           alt="Joda Masjid Logo"
           className="w-32 h-32"
         />
@@ -33,7 +33,10 @@ const NewPassword = () => {
         <form onSubmit={handleNewPasswordSubmit}>
           {/* New Password Input */}
           <div className="mb-4">
-            <Label htmlFor="new-password" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="new-password"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               New Password
             </Label>
             <Input
@@ -47,7 +50,10 @@ const NewPassword = () => {
 
           {/* Confirm Password Input */}
           <div className="mb-6">
-            <Label htmlFor="confirm-password" className="block text-sm font-medium text-gray-700 mb-1">
+            <Label
+              htmlFor="confirm-password"
+              className="block text-sm font-medium text-gray-700 mb-1"
+            >
               Confirm Password
             </Label>
             <Input
@@ -60,7 +66,10 @@ const NewPassword = () => {
           </div>
 
           {/* Submit Button */}
-          <Button type="submit" className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark">
+          <Button
+            type="submit"
+            className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark"
+          >
             Confirm Password
           </Button>
         </form>

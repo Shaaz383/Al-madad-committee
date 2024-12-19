@@ -8,7 +8,7 @@ const Navbar = ({ handleProfileClick }) => {
         <div className="w-1/4 h-1/4">
           <Link to="/">
             <img
-              src="../../../joda masjid logo.png"
+              src="../../../logo 2.png"
               alt="Logo"
               className="w-full h-full cursor-pointer" // Cursor indicates it's clickable
             />
