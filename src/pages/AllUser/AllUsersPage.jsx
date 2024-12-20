@@ -1,13 +1,13 @@
 "use client";
 
-import AllDonators from "@/my-components/AllUser/AllDonators";
-import TopDonors from "@/my-components/AllUser/TopDonors";
-import Navbar from "@/my-components/common-components/Navbar";
-import ProfileDialog from "@/my-components/common-components/ProfileDialog";
+import AllDonators from "@/pages/AllUser/components/AllDonators";
+import TopDonors from "@/pages/AllUser/components/TopDonors";
+import Navbar from "@/my-components/Navbar";
+import ProfileDialog from "@/my-components/ProfileDialog";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const AllUsers = () => {
+const AllUsersPage = () => {
   const img =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRPWpO-12m19irKlg8znjldmcZs5PO97B6A&s";
   const navigate = useNavigate();
@@ -93,4 +93,4 @@ const AllUsers = () => {
   );
 };
 
-export default AllUsers;
+export default AllUsersPage;

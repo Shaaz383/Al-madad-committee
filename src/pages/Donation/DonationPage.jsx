@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "@/my-components/common-components/Navbar";
-import ProfileDialog from "@/my-components/common-components/ProfileDialog";
-import CauseCard from "@/my-components/Donation/CauseCard";
+import Navbar from "@/my-components/Navbar";
+import ProfileDialog from "@/my-components/ProfileDialog";
+import CauseCard from "@/pages/Donation/components/CauseCard";
 
 const causes = [
   {
@@ -25,7 +25,7 @@ const causes = [
   // Add other causes here...
 ];
 
-const Donation = () => {
+const DonationPage = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -70,4 +70,4 @@ const Donation = () => {
   );
 };
 
-export default Donation;
+export default DonationPage;

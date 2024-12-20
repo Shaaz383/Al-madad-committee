@@ -10,11 +10,11 @@ const CauseCard = ({ cause }) => {
     100
   );
 
-  console.log("Progress Debug:", {
-    raisedAmount,
-    targetAmount,
-    progressPercentage,
-  });
+  // console.log("Progress Debug:", {
+  //   raisedAmount,
+  //   targetAmount,
+  //   progressPercentage,
+  // });
 
   return (
     <div className="bg-whiteColor rounded-lg shadow-md p-4 mb-6">

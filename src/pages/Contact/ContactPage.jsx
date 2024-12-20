@@ -1,14 +1,14 @@
 "use client";
 
-import ContactForm from "@/my-components/Contact/ContactForm";
-import ContactInfo from "@/my-components/Contact/ContactInfo";
-import Navbar from "@/my-components/common-components/Navbar";
-import ProfileDialog from "@/my-components/common-components/ProfileDialog";
+import ContactForm from "@/pages/Contact/components/ContactForm";
+import ContactInfo from "@/pages/Contact/components/ContactInfo";
+import Navbar from "@/my-components/Navbar";
+import ProfileDialog from "@/my-components/ProfileDialog";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Contact = () => {
-  const navigate = useNavigate()
+const ContactPage = () => {
+  const navigate = useNavigate();
   const [isDialogOpen, setIsDialogOpen] = useState(false); // Manage dialog state
 
   const handleProfileClick = () => setIsDialogOpen(true);
@@ -29,7 +29,9 @@ const Contact = () => {
 
       {/* Main Content */}
       <div className="py-8 px-4 mt-20">
-        <h1 className="text-3xl font-bold text-center mb-6 text-white">Contact Us</h1>
+        <h1 className="text-3xl font-bold text-center mb-6 text-white">
+          Contact Us
+        </h1>
         <ContactInfo />
         <ContactForm />
       </div>
@@ -45,4 +47,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

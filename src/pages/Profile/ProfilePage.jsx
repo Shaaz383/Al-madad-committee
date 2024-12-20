@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import ProfileSection from "@/my-components/Profile/ProfileSection";
-import DonationHistory from "@/my-components/Profile/DonationHistory";
-import EditProfileModal from "@/my-components/Profile/EditProfileModal";
-import LogoutButton from "@/my-components/Profile/LogoutButton";
-import Navbar from "@/my-components/common-components/Navbar";
-import ProfileDialog from "@/my-components/common-components/ProfileDialog";
+import ProfileSection from "@/pages/Profile/components/ProfileSection";
+import DonationHistory from "@/pages/Profile/components/DonationHistory";
+import EditProfileModal from "@/pages/Profile/components/EditProfileModal";
+import LogoutButton from "@/pages/Profile/components/LogoutButton";
+import Navbar from "@/my-components/Navbar";
+import ProfileDialog from "@/my-components/ProfileDialog";
 
-const Profile = () => {
+const ProfilePage = () => {
   // State for profile data
   const [name, setName] = useState("John Doe");
   const [email, setEmail] = useState("johndoe@example.com");
@@ -64,7 +64,9 @@ const Profile = () => {
     <div className="min-h-screen bg-bgGreenGradient p-4">
       <Navbar handleProfileClick={handleProfileClick} />
 
-      <h1 className="text-3xl font-bold text-center mt-20 py-8 text-whiteColor">Profile</h1>
+      <h1 className="text-3xl font-bold text-center mt-20 py-8 text-whiteColor">
+        Profile
+      </h1>
 
       {/* Profile Section */}
       <ProfileSection
@@ -102,4 +104,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProfilePage;

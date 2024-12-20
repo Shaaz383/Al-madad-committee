@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "@/my-components/common-components/Navbar";
-import SummarySection from "@/my-components/Budget/SummarySection";
-import ChartSection from "@/my-components/Budget/ChartSection";
-import TransactionHistory from "@/my-components/Budget/TransactionHistory";
-import ProfileDialog from "@/my-components/common-components/ProfileDialog";
+import Navbar from "@/my-components/Navbar";
+import SummarySection from "@/pages/Budget/components/SummarySection";
+import ChartSection from "@/pages/Budget/components/ChartSection";
+import TransactionHistory from "@/pages/Budget/components/TransactionHistory";
+import ProfileDialog from "@/my-components/ProfileDialog";
 
 const transactions = [
   { category: "Rent", amount: 5000, date: "2024-11-20" },
@@ -14,7 +14,7 @@ const transactions = [
   { category: "Entertainment", amount: 500, date: "2024-11-10" },
 ];
 
-const Budget = () => {
+const BudgetPage = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleProfileClick = () => setIsDialogOpen(true);
@@ -49,4 +49,4 @@ const Budget = () => {
   );
 };
 
-export default Budget;
+export default BudgetPage;
