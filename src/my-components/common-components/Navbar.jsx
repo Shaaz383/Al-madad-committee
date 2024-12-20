@@ -26,7 +26,7 @@ const Navbar = ({ handleProfileClick }) => {
           onClick={handleProfileClick}
         >
           <img
-            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRPWpO-12m19irKlg8znjldmcZs5PO97B6A&s"
             alt="Profile"
             className="w-full h-full object-cover"
           />

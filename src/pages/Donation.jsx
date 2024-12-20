@@ -10,7 +10,7 @@ const causes = [
   {
     id: 1,
     image:
-      "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=",
+      "https://borgenproject.org/wp-content/uploads/188138516_da49d74160_o-e1620997360746.jpg",
     name: "Helping the Homeless",
     description:
       "We are collecting donations to support homeless shelters in our community. Every contribution helps provide food, shelter, and essential items.",

@@ -7,8 +7,8 @@ const ProfileDialog = ({ isOpen, setIsOpen, handleLogout, handleGoToProfile }) =
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Profile Options</DialogTitle>
-          <DialogDescription>Choose an option</DialogDescription>
+          <DialogTitle className="text-primaryGreen">Profile Options</DialogTitle>
+          <DialogDescription className="text-secondary">Choose an option</DialogDescription>
         </DialogHeader>
         <DialogFooter>
           <button
