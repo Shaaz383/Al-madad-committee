@@ -55,7 +55,7 @@ const EditProfileModal = ({ name, email, mobileNumber, onSave, onClose }) => {
 
         <div className="flex justify-between">
           <button
-            className="px-4 py-2 bg-gray-500 text-white rounded-md"
+            className="px-4 py-2 bg-tomato text-white rounded-md"
             onClick={onClose}
           >
             Cancel

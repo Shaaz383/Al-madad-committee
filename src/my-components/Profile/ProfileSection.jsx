@@ -10,13 +10,14 @@ const ProfileSection = ({
 }) => {
   return (
     <div className="bg-whiteColor rounded-lg shadow-md p-6 mb-6 flex items-center space-x-4">
-      <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center">
-        <span className="text-white text-lg font-semibold">
+      <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-300 flex items-center justify-center">
+        {/* <span className="text-white text-lg font-semibold">
           {name
             .split(" ")
             .map((n) => n[0])
             .join("")}
-        </span>
+        </span> */}
+        <img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/662c092880a6d18c31995e13_66236537d4f46682e079b6ce_Casual%2520Portrait.webp"/>
       </div>
       <div>
         <div className="flex items-center space-x-2">
