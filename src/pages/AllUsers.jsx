@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const AllUsers = () => {
   const img =
-    "https://t3.ftcdn.net/jpg/06/33/54/78/360_F_633547842_AugYzexTpMJ9z1YcpTKUBoqBF0CUCk10.jpg";
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRPWpO-12m19irKlg8znjldmcZs5PO97B6A&s";
   const navigate = useNavigate();
 
   const topDonors = [
