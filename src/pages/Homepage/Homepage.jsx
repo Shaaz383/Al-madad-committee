@@ -1,6 +1,6 @@
 import BoxesContainer from "@/pages/Homepage/components/BoxContainer";
-import Navbar from "@/my-components/Navbar";
-import ProfileDialog from "@/my-components/ProfileDialog";
+import Navbar from "@/components/ui/common-components/Navbar";
+import ProfileDialog from "@/components/ui/common-components/ProfileDialog";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 

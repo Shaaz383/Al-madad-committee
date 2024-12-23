@@ -2,8 +2,8 @@
 
 import AllDonators from "@/pages/AllUser/components/AllDonators";
 import TopDonors from "@/pages/AllUser/components/TopDonors";
-import Navbar from "@/my-components/Navbar";
-import ProfileDialog from "@/my-components/ProfileDialog";
+import Navbar from "@/components/ui/common-components/Navbar";
+import ProfileDialog from "@/components/ui/common-components/ProfileDialog";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 

@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "@/my-components/Navbar";
+import Navbar from "@/components/ui/common-components/Navbar";
 import SummarySection from "@/pages/Budget/components/SummarySection";
 import ChartSection from "@/pages/Budget/components/ChartSection";
 import TransactionHistory from "@/pages/Budget/components/TransactionHistory";
-import ProfileDialog from "@/my-components/ProfileDialog";
+import ProfileDialog from "@/components/ui/common-components/ProfileDialog";
 
 const transactions = [
   { category: "Rent", amount: 5000, date: "2024-11-20" },

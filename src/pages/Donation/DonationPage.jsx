@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "@/my-components/Navbar";
-import ProfileDialog from "@/my-components/ProfileDialog";
+import Navbar from "@/components/ui/common-components/Navbar";
+import ProfileDialog from "@/components/ui/common-components/ProfileDialog";
 import CauseCard from "@/pages/Donation/components/CauseCard";
 
 const causes = [

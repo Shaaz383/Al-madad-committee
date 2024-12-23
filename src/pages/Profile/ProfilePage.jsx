@@ -3,8 +3,8 @@ import ProfileSection from "@/pages/Profile/components/ProfileSection";
 import DonationHistory from "@/pages/Profile/components/DonationHistory";
 import EditProfileModal from "@/pages/Profile/components/EditProfileModal";
 import LogoutButton from "@/pages/Profile/components/LogoutButton";
-import Navbar from "@/my-components/Navbar";
-import ProfileDialog from "@/my-components/ProfileDialog";
+import Navbar from "@/components/ui/common-components/Navbar";
+import ProfileDialog from "@/components/ui/common-components/ProfileDialog";
 
 const ProfilePage = () => {
   // State for profile data
