@@ -6,6 +6,7 @@ import Navbar from "@/components/ui/common-components/Navbar";
 import ProfileDialog from "@/components/ui/common-components/ProfileDialog";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PaymentInfo from "./components/PaymentInfo";
 
 const ContactPage = () => {
   const navigate = useNavigate();
@@ -32,6 +33,7 @@ const ContactPage = () => {
         <h1 className="text-3xl font-bold text-center mb-6 text-white">
           Contact Us
         </h1>
+        <PaymentInfo/>
         <ContactInfo />
         <ContactForm />
       </div>

@@ -10,20 +10,20 @@ const ContactInfo = () => {
       {/* Email */}
       <div className="mb-4">
         <p className="text-sm text-primaryGreen font-medium">Email</p>
-        <p className="text-sm text-blue-500">community@example.com</p>
+        <p className="text-sm text-blue-500">almadadcommittee@gmail.com</p>
       </div>
 
       {/* Phone */}
       <div className="mb-4">
         <p className="text-sm text-primaryGreen font-medium">Phone</p>
-        <p className="text-sm text-blue-500">+123 456 7890</p>
+        <p className="text-sm text-blue-500">+91 9504913668</p>
       </div>
 
       {/* Address */}
       <div className="mb-4">
         <p className="text-sm text-primaryGreen font-medium">Address</p>
         <p className="text-sm text-primaryGreen">
-          1234 Community St, City, Country
+          Joda Masjid Manpur , Gaya
         </p>
       </div>
     </div>
