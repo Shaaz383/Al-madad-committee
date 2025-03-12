@@ -19,6 +19,7 @@ const ProfilePage = () => {
   // Modal visibility
   const [showModal, setShowModal] = useState(false);
 
+
   const handleGoToProfile = () => {
     navigate("/profile");
     setIsDialogOpen(false);
@@ -103,5 +104,5 @@ const ProfilePage = () => {
     </div>
   );
 };
-
+  
 export default ProfilePage;
